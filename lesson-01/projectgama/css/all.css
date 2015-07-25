@@ -1,0 +1,111 @@
+body{
+margin:0;
+}
+.wrapper{
+	width: 700px;
+	margin:0 auto;
+	}
+
+
+.header {
+	/*height: 100px;*/
+	background-color: #2ca009;
+	padding: 25px;
+}
+.logo {
+	display: inline-block;
+	width: 106px;
+	height: 79px;
+	background-image:url(img/logo.jpg);
+	background-repeat:no-repeat;
+}
+.main {
+	/*	height: 539px;*/
+	background-color:#fff;
+}
+.sidebar {
+	/*vertical-align: top;*/
+	/*display: inline-block;*/
+	min-height: 539px;
+	width: 200px;
+	background-color:#e0d7d7;
+	float:left;
+	margin-right:50px;
+}
+.content {
+	/*float:left;
+	display: inline-block;
+	width: 500px;
+	min-height: 539px;
+	background-color:#fff;*/
+}
+.footer{
+	background-image:url(img/grad.jpg);
+	background-repeat:repeat-x;
+	/*background: linear-gradient(to bottom,#f7f7f6,#73716c);*/
+	height: 7px;
+	/*margin-top:300px;*/
+	padding-bottom: 41px;
+	padding-top:28px;
+	clear:both;
+}
+.menu{
+	font-family: arial;
+	font-size:15px;
+	font-style:normal;
+	margin-bottom:15px;
+	margin-top:30px;
+	margin-left:30px;
+	text-decoration:none;
+	color:#bd154d;
+}
+.cont-text{
+	padding-top:20px;
+}
+.cont{
+	text-align: center;
+	margin-top:5px;
+}
+.topic{
+	font-family: arial;
+	font-size:24px;
+	font-style:bold;
+	color:#999;
+	margin-top:0;
+}
+.text{
+	font-family: arial;
+	font-size:12px;
+	font-style:normal;
+}
+.cont-ul{
+	font-family: arial;
+	font-style: normal;
+	font-size: 12px;
+	text-align: center;
+	margin: 0;
+
+}
+.cont-ul li{
+	padding:5px;
+	display:inline-block;
+}
+.cont-ul li a{
+	text-decoration:none;
+	color:#000000;
+}
+.manu-href li{
+	list-style-type: none;
+	margin:10px 0;
+}
+.manu-href li a:hover{
+	color:red;
+	text-decoration: underline;
+}
+.cont-ul li a:hover{
+	color:red;
+	text-decoration: underline;
+}
+.manu-href li a{
+	text-decoration:none;}
+.manu-href{padding-left:0;}
