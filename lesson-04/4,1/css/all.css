@@ -124,7 +124,7 @@ a{
 	color:#333;
 	font-weight: bold;
 }
-.sidebar-list li a:hover{
+.sidebar-list li:hover a{
 	color:#339933;
 	text-decoration: underline;
 }
