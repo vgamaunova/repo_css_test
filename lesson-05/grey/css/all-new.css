@@ -1,0 +1,92 @@
+body{
+	background: #1a1a1a url(../images/background.png)  no-repeat;
+}
+.header-bottom{
+	background: #0a0a0a;
+	background: linear-gradient(to top, #010101, #191919);
+}
+.top-left{
+	font-size: 12px;
+	color: #fff;
+	margin:0 0 0 175px;
+}
+.top-nav {
+	margin-top: -25px;
+}
+.logo img{
+	margin: -20px 0 -40px 0;
+}
+
+.button a{
+	background: #f28a00;
+	background: linear-gradient(to top, #fe9800, #e87d00);
+}
+.box{
+	background: #fa9601;
+	width: 225px;
+	margin: auto;
+	border-top: 1px solid #fcc26d;
+	border-bottom: 1px solid #693f00;
+}
+.button-box{
+	text-align: center;
+	padding-bottom: 10px;
+	padding-right: 7px;
+}
+.box p{
+	font-size: 18px;
+	color: #fff;
+	font-weight: bold;
+	padding: 15px 0 0px 0px;
+}
+.button-box a{
+	background: #2b2b2b;
+	background: linear-gradient(to top, #303030, #242424);
+	color: #fff;
+	text-decoration: none;
+	font-size: 11px;
+	font-weight: bold;
+	text-transform: uppercase;
+	padding: 5px 10px;
+}
+.logo-box{
+	padding-top: 20px;
+	float: left;
+}
+.game {
+	padding: 10px;
+}
+.game h3{
+	font-size: 20px;
+	color: #fff; 
+}
+.game a, .game p{
+	font-size: 13px;
+	color: #fa9601;
+}
+.game span{
+	font-size: 14px;
+}
+.bold{
+	font-weight: bold;
+}
+.game p{
+	color: #fff;
+}
+.table{
+	background: #c0c0c0;
+	background: linear-gradient(to top, #ccc, #b3b3b3);
+}
+.table td{
+	border-bottom: 1px solid #a3a3a3 ; 
+	border-right: 1px solid #a3a3a3 
+}
+.internal_table td{
+	border: 0 solid
+}
+.table .no-border{
+	border-right: 0 solid ;
+}
+.footer{
+	background: #000;
+}
