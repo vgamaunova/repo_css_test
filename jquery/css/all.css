@@ -1,0 +1,56 @@
+.accordeon_trigger{
+	display: block;
+}
+.accordeon_inner{
+	display: none;
+}/*
+.active{
+	display: block;
+}*/
+
+
+/*Слайдшоу*/
+.slideshow{
+	padding: 200px;
+	width: 502px;
+}
+.slideshow_item{
+	display: inline-block;
+	float: left;
+	margin-left: 23px;
+}
+
+.slideshow_item:first-child{
+	margin-left: 0;
+}
+.slideshow_display{
+	width: 500px;
+	height: 400px;
+	border: 1px dashed #cccccc;
+	position: relative;
+}
+
+.slideshow_display img{
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;bottom: 0;
+	margin:auto;
+}
+
+.slideshow_list{
+	margin: 0;
+	padding: 0;
+	padding-top: 15px;
+}
+.slideshow_item{
+	padding: 3px;
+	border: 1px dashed #000;
+}
+.slideshow_item:hover{
+	border: 1px solid #000;
+}
+.slideshow_item .active{
+
+}
