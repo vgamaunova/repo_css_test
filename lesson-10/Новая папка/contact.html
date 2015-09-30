@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Contact</title>
+	<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/main.js"></script>
+	<link rel="stylesheet" href="css/owl.carousel.css">
+	<link rel="stylesheet" href="css/all.css">
+</head>
+<body onload="initialize()">
+	<div class="header">
+		<div class="top-nav">
+			<div class="container">
+				<a href="#" class="logo">
+					<img src="images/logo.png" height="57" width="294" alt="">
+				</a>
+				<ul class="top-nav-list">
+					<li><a href="contact.html">Contact Us</a></li>
+					<li><a href="#"> About Us </a></li>
+					<li><a href="#">Services</a></li>
+					<li><a href="portfolio.html">Portfolio</a></li>
+					<li><a href="#">Blog</a></li>
+					<li><a href="home.html">Home</a></li>
+				</ul>
+			</div>
+		</div>
+	</div><!-- end header -->
+	<div class="main">
+		<div class="container">
+			<h2 class="heading heading-border"><i class="icon-mail"></i>contact us</h2>
+			<div class="wrapper-maps">
+				<div class="maps box-button">
+					<span class="heading-maps">We are here</span>
+					<div id="map_canvas"></div>
+				</div>
+				<h2 class="heading">Office Address</h2>
+				<ul class="address">
+					<li>BisLite Inc.<br>Always Street 265<br>0X - 125 - Canada</li>
+					<li>Phone: 987-6543-210<br>Fax: 987-6543-210</li>
+				</ul>
+			</div>
+			<p class="contacts-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis quo sit sint cumque voluptatum cum eligendi voluptas, veniam nam necessitatibus cupiditate quisquam quia eius. Obcaecati, ipsa odit aut tenetur nobis nesciunt rem voluptatibus quos! Voluptate facilis, adipisci laborum nam. Praesentium expedita explicabo at magni quia consectetur dolor, hic facere officiis.</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam, aut! <a href="#" class="content__text-link--size">email@bislite.com</a></p>
+			<div class="wrapper-form">
+				<form action="">
+					<label for="" class="form--size">Name<br>
+						<input type="text" class="control">
+					</label>
+					<label for="">Email Address<br>
+						<input type="text" class="control" placeholder="mishka@mail.ru">
+					</label>
+					<label for="" class="form--size">Subject<br>
+						<input type="text" class="control">
+					</label>
+					<label for="">Description<br>
+						<textarea class="control" name="" id="" cols="30" rows="10"></textarea>
+					</label>
+
+					<button  class="btn"><i class="icon-arrow-right"></i>Submit</button>
+				</form>
+			</div>
+		</div>
+	</div>
+	<!-- footer -->
+	<div class="footer">
+		<div class="container">
+			<ul class="fooer-list">
+				<li>
+					<div class="footer-box footer-text">
+						<div class="heading">About us</div>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi euismod placerat dui et tincidunt. Sed sollicitudin posuere auctor. Phasellus at ultricies nisl. Integer at leo eros. Ut nec lorem id orci convallis porta. Donec pharetra neque eu velit dictum molestie. </p>
+					</div>
+				</li>
+				<li>
+					<div class="footer-box">
+						<div class="heading">Explore</div>
+						<ul class="nav-footer">
+							<li><a href="#">Home</a></li>
+							<li><a href="#">About Us</a></li>
+							<li><a href="#">lorem</a></li>
+							<li><a href="#">lorem</a></li>
+							<li><a href="#">Blog</a></li>
+						</ul>
+					</div>
+				</li>
+				<li>
+					<div class="footer-box">
+						<div class="heading">Browse</div>
+						<ul class="nav-footer">
+							<li><a href="#">Home</a></li>
+							<li><a href="#">About Us</a></li>
+							<li><a href="#">lorem</a></li>
+							<li><a href="#">lorem</a></li>
+							<li><a href="#">Blog</a></li>
+						</ul>
+					</div>
+				</li>
+				<li>
+					<div class="footer-box">
+						<div class="heading">contact us</div>
+						<p>BisLite Inc.<br> Always Street <br>265 0X - 125 - Canada<br>Phone: 987-6543-210 <br>Fax: 987-6543-210</p>
+					</div>
+				</li>
+				<li>
+					<div class="footer-box padding0">
+						<div class="heading">connect with us</div>
+						<ul class="nav-footer social">
+							<li><a href="#"><i class="icons icon-social-1"></i></a></li>
+							<li><a href="#"><i class="icons icon-social-2"></i></a></li>
+							<li class="padding0"><a href="#"><i class="icons icon-social-3"></i></a></li>
+							<li><a href="#"><i class="icons icon-social-4"></i></a></li>
+							<li><a href="#"><i class="icons icon-social-5"></i></a></li>
+							<li class="padding0"><a href="#"><i class="icons icon-social-6"></i></a></li>
+						</ul>
+					</div>
+				</li>
+			</ul>
+			<div class="logo-footer"><img src="images/logo.png" height="37" width="148" alt=""></div>
+			<p>© Copyright 2012 - BisLite Inc. All rights reserved. Some free icons used here are created by Brankic1979.com. 
+Client Logos are copyright and trademark of the respective owners / companies. </p>
+		</div>
+	</div>
+	<!-- end footer -->
+	<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+<script type="text/javascript">
+ function initialize() {
+ var latlng = new google.maps.LatLng(49.993352, 36.239661);
+ var settings = {
+ zoom: 12,
+ center: latlng,
+ mapTypeControl: true,
+ mapTypeControlOptions: {style: google.maps.MapTypeControlStyle.DROPDOWN_MENU},
+ navigationControl: true,
+ navigationControlOptions: {style: google.maps.NavigationControlStyle.SMALL},
+ mapTypeId: google.maps.MapTypeId.ROADMAP
+ };
+ var map = new google.maps.Map(document.getElementById("map_canvas"), 
+settings);
+  var styles = [
+  {
+      featureType: 'all',
+ 		stylers: [
+ 			{hue: '#ff00ff'},
+		]
+	}
+];
+
+map.setOptions({styles: styles});
+ var companyPos = new google.maps.LatLng(49.993352, 36.239661);
+var companyMarker = new google.maps.Marker({
+position: companyPos,
+map: map,
+title:"Some title"
+});
+ }
+</script>
+</body>
+</html>
