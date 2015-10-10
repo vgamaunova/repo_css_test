@@ -45,6 +45,24 @@ a:hover{
 		margin: 10px;
 		display: block;
 	}
+	&-mobil{
+		position: absolute;
+		display: none;
+		top:44%;
+		left: 90%;
+		width: 25px;height: 10px;
+		background:url(../images/btn-mobil.png);
+		background-position:25px 0;
+		@media(max-width: $max-width){
+			display: block;
+		}
+	}
+	&--block{
+		display: none;
+		@media(max-width: $max-width){
+			display: block;
+		}
+	}
 }
 .heading{
 	text-transform: uppercase;
@@ -70,7 +88,9 @@ a:hover{
 		border: 1px solid $black;
 		}
 	@media(max-width: $max-width){
-		margin: 10px 0;
+		padding:15px;
+		margin: 5px;
+		font-size: 14px;
 	}
 }
 // end form
@@ -481,12 +501,23 @@ a:hover{
 		&__wrapper{
 			width: 70%;
 			margin: auto;
+			@media(max-width: $max-width){
+				display: none;
+				width: 100%;
+			}
 		}
 		&__title{
+			position: relative;
 			font-size: 24px;
 			font-weight: bold;
 			padding-top: 110px;
 			padding-bottom: 35px;
+			@media(max-width: $max-width){
+				padding: 20px;
+				text-align: left;
+				background: #ebebeb;
+				border-bottom: 1px solid $black;
+			}
 		}
 		&__table{
 			width: 100%;
@@ -519,6 +550,13 @@ a:hover{
 	&-button{
 		float: right;
 		margin:65px 100px 150px;
+		@media(max-width:$max-width){
+			float: none;
+			text-align: center;
+			margin: 0;
+			width: 100%;
+			background: $black;
+		}
 	}
 	&-description{
 		position: absolute;
@@ -527,7 +565,9 @@ a:hover{
 		font-size: 38px;
 
 		@media(max-width: $max-width){
-			top:16px;
+			top:15px;
+			font-size: 45px;
+			left: 66%;
 		}
 	}
 }
@@ -843,6 +883,7 @@ a:hover{
 	font-size: 0;
 	width: 100%;
 	position: relative;
+	padding: 20px 0;
 	border-bottom: 1px solid $black;
 	@media(max-width:$max-width){
 		// overflow: hidden;
@@ -904,8 +945,67 @@ a:hover{
 // end wish list
 // **********************
 // cart
+.cart-list__item{
+	padding-left: 0;
+	padding-right: 7%;
+}
 .cart-delete{
-	margin:0 10%;
+	display: block;
+	width: 26px;
+	height: 26px;
+	background: url(../images/icon.png) no-repeat;
+	position: absolute;
+	top:45%;
+	left: 93%;
+	@media(max-width: $max-width){
+		top:35%
+	}
+}
+.total-list{
+	float:right;
+	width: 80%;
+	margin-right: 13.5%;
+	padding: 50px 0;
+	text-align: right;
+	@media(max-width: $max-width){
+		text-align: left;
+		padding: 20px 0 25px;
+	}
+	&:after{
+		content: "";
+		display: block;
+		clear: both;
+	}
+	&__item{
+		display: inline-block;
+		// vertical-align: sub;
+			font-size: 24px;
+			margin-left: 12%;
+		&--title{
+			font-weight: bold;
+			@media (max-width: $max-width) {
+				font-size: 20px;
+			}
+		}
+	}
+}
+
+.cart__button{
+	clear: both;
+	float: right;
+	margin: 100px;
+	@media(max-width: $max-width){
+		float: none;
+		text-align: center;
+		margin:40px auto;
+	}
+}
+.border-bottom{
+	width: 100%;
+	height: 1px;
+	background: $black;
+	clear: both;
+	margin-top: 5%;
 }
 // end cart
 // **********************
@@ -1002,5 +1102,8 @@ a:hover{
 			}
 		}
 	}
-
+	
+	.active .btn-mobil{
+		background-position:0 0;
+	}
 }
