@@ -1,0 +1,90 @@
+$brand-primary:red;
+$link-color:  #cb0921;
+$color:#000;
+$grid-gutter-width:50px;
+$font-family-base:"Lobster1.4";
+/* @font-face kit by Fonts2u (http://www.fonts2u.com) */ 
+@font-face {font-family:"Lobster1.4";src:url("../fonts/Lobster_1_4.eot?") format("eot"),url("../fonts/Lobster_1_4.woff") format("woff"),url("../fonts/Lobster_1_4.ttf") format("truetype"),url("../fonts/Lobster_1_4.svg#Lobster1.4") format("svg");font-weight:normal;font-style:normal;}
+// body{
+// 	font-family: ;
+// }
+.content{
+	background: #73412d;
+	padding: 60px 0;
+
+}
+.thumb{
+	&__description{
+		background:#f6dbac;
+		color:#643827;
+		margin-top: 10px;
+		padding:65px 25px;
+		position: relative;
+		&-text{
+			color: #049b99;
+			font-size: 20px;
+			padding-top: 25px;
+			display: block;
+		}
+		&-content{
+			font-family: "Arial";
+			font-size: 14px;
+		}
+	}
+	&__title{
+		background: #ff1b39;
+		position: absolute;
+		top: 10px;
+		left: 0;
+		width: 100%;
+		font-size: 26px;
+		padding-bottom: 3px;
+		color:#f6dbac;
+		padding-left: $grid-gutter-width;
+		&:after{
+			content: "";
+			background: url(../images/img3.png);
+			height: 43px;
+			width: 26px;
+			position: absolute;
+			top: 0;left: -26px;
+		}
+		&:before{
+			@extend .thumb__title:after;
+			left: 100%;
+			background-position: 30px 0px;
+		}
+		&-icon{
+			background: url(../images/img4.png);
+			display: block;
+			width: 60px;
+			height: 70px;
+			position: absolute;
+			top: -35px;
+			left: 75%;
+			&--2{
+				background-position: -55px 0;
+			}
+			&--3{
+				background-position: 70px 0;
+			}
+		}
+	}
+}
+// footer
+.footer{/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#fdb5b9+0,ffcdcd+41,ffcdcd+100 */
+background: #fdb5b9; /* Old browsers */
+background: -moz-linear-gradient(top,  #fdb5b9 0%, #ffcdcd 41%, #ffcdcd 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fdb5b9), color-stop(41%,#ffcdcd), color-stop(100%,#ffcdcd)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #fdb5b9 0%,#ffcdcd 41%,#ffcdcd 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #fdb5b9 0%,#ffcdcd 41%,#ffcdcd 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #fdb5b9 0%,#ffcdcd 41%,#ffcdcd 100%); /* IE10+ */
+background: linear-gradient(to bottom,  #fdb5b9 0%,#ffcdcd 41%,#ffcdcd 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fdb5b9', endColorstr='#ffcdcd',GradientType=0 ); /* IE6-9 */
+
+}
+.nav{
+	font-size: 16px;
+}
+@import "_bootstrap.scss";
+
