@@ -3,17 +3,66 @@ $link-color:  #cb0921;
 $color:#000;
 $grid-gutter-width:50px;
 $font-family-base:"Lobster1.4";
+$navbar-margin-bottom: 0;
+$font-size-h1:22px;
+$line-height-computed:5px;
+$nav-link-hover-bg:transparent;
 /* @font-face kit by Fonts2u (http://www.fonts2u.com) */ 
 @font-face {font-family:"Lobster1.4";src:url("../fonts/Lobster_1_4.eot?") format("eot"),url("../fonts/Lobster_1_4.woff") format("woff"),url("../fonts/Lobster_1_4.ttf") format("truetype"),url("../fonts/Lobster_1_4.svg#Lobster1.4") format("svg");font-weight:normal;font-style:normal;}
 // body{
 // 	font-family: ;
 // }
+header{
+	font-size: 14px;
+	color:#561e10;
+	font-family: "Arial";
+	background:rgba(#ffc9c9,0.94);
+	position: relative;
+	&:after{
+		content:"";
+		display: block; 
+		width: 100%;
+		height: 40px;
+		background: url(../images/img6.png)repeat-x;
+		position: absolute;
+		top: 67%;left: 0;
+	}
+}
+.icon{
+	display: inline-block;
+	width: 25px;
+	height: 16px;
+	background: url(../images/icon.png);
+	vertical-align: middle;
+	&-shopping_basket-48{
+		background-position: -45px 0;
+	}
+}
+.title{
+	text-align: center;
+	color: #ed1d38;
+	position: relative;
+	margin-top: 30px;
+	padding-bottom: 10px;
+	background: linear-gradient(to bottom,  #fec1c1 0%,#ffcbcb 100%);
+	&:before{
+		content: "";
+		display: block;
+		width: 100%;
+		height: 20px;
+		position: absolute;
+		top: -15px;left: 0;
+		background: url(../images/img5.png);
+	}
+
+}
 .content{
 	background: #73412d;
 	padding: 60px 0;
 
 }
 .thumb{
+	padding: 1px;
 	&__description{
 		background:#f6dbac;
 		color:#643827;
@@ -72,19 +121,27 @@ $font-family-base:"Lobster1.4";
 	}
 }
 // footer
-.footer{/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#fdb5b9+0,ffcdcd+41,ffcdcd+100 */
-background: #fdb5b9; /* Old browsers */
-background: -moz-linear-gradient(top,  #fdb5b9 0%, #ffcdcd 41%, #ffcdcd 100%); /* FF3.6+ */
-background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fdb5b9), color-stop(41%,#ffcdcd), color-stop(100%,#ffcdcd)); /* Chrome,Safari4+ */
-background: -webkit-linear-gradient(top,  #fdb5b9 0%,#ffcdcd 41%,#ffcdcd 100%); /* Chrome10+,Safari5.1+ */
-background: -o-linear-gradient(top,  #fdb5b9 0%,#ffcdcd 41%,#ffcdcd 100%); /* Opera 11.10+ */
-background: -ms-linear-gradient(top,  #fdb5b9 0%,#ffcdcd 41%,#ffcdcd 100%); /* IE10+ */
-background: linear-gradient(to bottom,  #fdb5b9 0%,#ffcdcd 41%,#ffcdcd 100%); /* W3C */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fdb5b9', endColorstr='#ffcdcd',GradientType=0 ); /* IE6-9 */
+.footer{
+	&:after{
+		display: block;
+		content: "";
+		clear: both;
+	}
+	background: linear-gradient(to bottom,  #fdb5b9 0%,#ffcdcd 41%,#ffcdcd 100%); /* W3C */
+
 
 }
-.nav{
+.footer{
 	font-size: 16px;
+}
+.copiright{
+	margin: -35px 0;
+	color:$link-color;
+	@media(max-width: 768px){
+		width: 100%;
+		text-align: center;
+		margin: 0px;
+	}
 }
 @import "_bootstrap.scss";
 
