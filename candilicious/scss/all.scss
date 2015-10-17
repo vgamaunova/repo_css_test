@@ -4,29 +4,96 @@ $color:#000;
 $grid-gutter-width:50px;
 $font-family-base:"Lobster1.4";
 $navbar-margin-bottom: 0;
+$navbar-padding-vertical:8px;
 $font-size-h1:22px;
 $line-height-computed:5px;
+$brand-color: #ffcccc;
 $nav-link-hover-bg:transparent;
+$background:#73412d;
+$btn-default-color:#f6dbac;
 /* @font-face kit by Fonts2u (http://www.fonts2u.com) */ 
-@font-face {font-family:"Lobster1.4";src:url("../fonts/Lobster_1_4.eot?") format("eot"),url("../fonts/Lobster_1_4.woff") format("woff"),url("../fonts/Lobster_1_4.ttf") format("truetype"),url("../fonts/Lobster_1_4.svg#Lobster1.4") format("svg");font-weight:normal;font-style:normal;}
+@font-face {
+	font-family:"Lobster1.4";src:url("../fonts/Lobster_1_4.eot?") format("eot"),url("../fonts/Lobster_1_4.woff") format("woff"),url("../fonts/Lobster_1_4.ttf") format("truetype"),url("../fonts/Lobster_1_4.svg#Lobster1.4") format("svg");font-weight:normal;font-style:normal;}
 // body{
 // 	font-family: ;
 // }
+img{
+	width: 100%;
+	height: auto;
+}
 header{
 	font-size: 14px;
 	color:#561e10;
 	font-family: "Arial";
-	background:rgba(#ffc9c9,0.94);
 	position: relative;
-	&:after{
-		content:"";
-		display: block; 
-		width: 100%;
-		height: 40px;
-		background: url(../images/img6.png)repeat-x;
+	background: url(../images/img6.png)repeat-x;
+	z-index: 1;
+}
+main{
+	// z-index: -1;
+	position: relative;
+	background: url(../images/img2.png);
+	padding: 25px 0;
+	margin: -25px 0;
+}
+.logo{
+	margin-top: -155px;
+	position: relative;
+	@media(max-width: 992px){
+		margin: 0 0 30px 0;
 		position: absolute;
-		top: 67%;left: 0;
+		top: 20px;
+		left: 0;
+		max-width: 108px;
+		max-height: 75px;
 	}
+	&__img{
+		max-width: 216px;
+		max-height: 150px;
+	}
+	&__title{
+		position: absolute;
+		top: 18%;
+		left: 1%;
+		font-size: 40px;
+		color:#f3ecd2;
+		transform:rotate(-12deg);
+		@media(max-width: 992px){
+			font-size: 20px;
+		}
+	}
+}
+.main{
+	&-nav{	
+		z-index: 1;	
+		@media(max-width:768px){
+		margin-top:50px;
+		}
+		&__item{
+			font-size: 26px;
+		}
+		&__link{
+			padding: 20px 15px!important;
+			margin: 55px 0;
+			color: darken($link-color, 10%);
+			&:hover{
+				color: lighten($link-color, 10%);
+			}
+			@media(max-width:768px){
+			margin: 0;
+			}
+			&--active{
+				@extend .main-nav__link:hover;
+				background:$brand-color;
+				&:hover{
+					background: $brand-color!important;
+				}
+			}
+		}
+	}
+}
+.header-nav .header-nav__item{
+	display: inline-block;
 }
 .icon{
 	display: inline-block;
@@ -36,6 +103,57 @@ header{
 	vertical-align: middle;
 	&-shopping_basket-48{
 		background-position: -45px 0;
+	}
+}
+.carousel-box{
+	position: absolute;
+	top: 15%;
+	left: 5%;
+	width: 50%;
+	background: rgba(#e7dec0, 0.65);
+	padding: 20px;
+	@media(max-width: 991px){
+		width: 65%;
+	}
+	@media(max-width: 605px){
+		width: 90%;
+		padding: 2px;
+	}
+	&__title{
+		font-size: 43px;
+		color:#c9030c;
+		@media(max-width: 720px){
+			font-size: 30px
+		}
+	@media(max-width: 605px){
+		font-size: 16px;
+	}
+	}
+	&__description{
+		font-family: "Arial";
+		font-size: 18px;
+		@media(max-width: 720px){
+			font-size: 14px
+		}
+	@media(max-width: 605px){
+		font-size: 10px;
+	}
+	}
+	&__btn{
+		float: right;
+		&--primari{
+			background:$background;
+			font-family: "Arial";
+			color: #fff;
+			&:hover{
+				background: darken($background, 10%);
+				color:#fff;
+			}			
+			// @media(max-width: 605px){
+			// 	font-size: 10px;
+			// 	padding: 2px 5px;
+			// }
+		}
 	}
 }
 .title{
@@ -57,7 +175,7 @@ header{
 
 }
 .content{
-	background: #73412d;
+	background:$background;
 	padding: 60px 0;
 
 }
@@ -88,7 +206,7 @@ header{
 		width: 100%;
 		font-size: 26px;
 		padding-bottom: 3px;
-		color:#f6dbac;
+		color:$btn-default-color;
 		padding-left: $grid-gutter-width;
 		&:after{
 			content: "";
@@ -122,6 +240,9 @@ header{
 }
 // footer
 .footer{
+	&__nav{
+		padding: 15px 0;
+	}
 	&:after{
 		display: block;
 		content: "";
